@@ -5,7 +5,8 @@ from sympy import *
 
 def is_separable( eq ):
     
-    return True
+    
+    return True 
 
 def show_resources():
     #TODO
@@ -19,6 +20,7 @@ def evaluate( eq ):
     
     if is_separable( eq ):
         #función para imprimir indicaciones
+        print('es separable equis de') #Borrame prro
     else:
         show_resources()
 
@@ -28,11 +30,16 @@ def evaluate( eq ):
 
 def main():
     x,y = symbols('x y')
+    eq = 1
+    #pa que imprima bonito
+    init_printing(use_unicode=True)
 
-    eq = sympify(input('Escribe tu ecuación: '))
-    #TODO verificar valides de entrada
+    #introducir 0 para terminar ejecución
+    while( eq != 0 ): 
+        eq = sympify(input('Escribe tu ecuación: '))
+        #TODO verificar valides de entrada
 
-    evaluate( eq )
+        evaluate( eq )
 
 if __name__ == '__main__':
     main()
