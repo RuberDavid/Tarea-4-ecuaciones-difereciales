@@ -8,7 +8,7 @@ def is_separable( eq ):
 	"""
 	Return True if the equation is separable, False if it is not.
 	If 	f(x,y) = p(x)q(y) then f(1,1) = p(1)q(1)
-	so 			    f(1,y)f(x,1) = p(1)q(y)p(x)q(1)
+	so 		f(1,y)f(x,1) = p(1)q(y)p(x)q(1)
 	therefore 	f(1,y)f(x,1) = f(1,1)f(x,y)
 	name: is_separable
 	@param expression
