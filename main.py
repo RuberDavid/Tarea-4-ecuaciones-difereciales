@@ -22,9 +22,9 @@ def is_separable( eq ):
     
     # if f(1,y)f(x,1) = f(1,1)f(x,y) is separable
     if simplify( eq_2 - (eq.subs([(x,1),(y,1)])*eq) ) == 0:
-		return True
+        return True
     else:
-		return False
+        return False
 	
 # < >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >
 
