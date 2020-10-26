@@ -4,13 +4,12 @@
 from sympy import *
 
 def is_separable( eq ):
-    
-    
-    return True 
+    #si eq es separable, regresa True, False de lo contrario
+    return True #TODO Modifcame prroooo
 
 def show_resources():
     #TODO
-    print("aguantaaaaaaaa")
+    print("ahorita no joven")
 
 def evaluate( eq ):
     '''
@@ -20,7 +19,7 @@ def evaluate( eq ):
     
     if is_separable( eq ):
         #función para imprimir indicaciones
-        print('es separable equis de') #Borrame prro
+        print('es separable equis de') #TODOBorrame prro
     else:
         show_resources()
 
