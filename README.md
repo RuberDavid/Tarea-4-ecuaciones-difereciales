@@ -4,5 +4,6 @@
 
 sólo introducir ecuaciones con polinomios
 ### Ejemplo de formato
-x^2+y*y'
+
+x\**2+y*y'
 la derivada escribirla como y'
