@@ -3,6 +3,10 @@
 
 from sympy import *
 
+def is_separable( eq ):
+    
+    return True
+
 def show_resources():
     #TODO
     print("aguantaaaaaaaa")
@@ -15,7 +19,6 @@ def evaluate( eq ):
     
     if is_separable( eq ):
         #función para imprimir indicaciones
-    elif 0:
     else:
         show_resources()
 
