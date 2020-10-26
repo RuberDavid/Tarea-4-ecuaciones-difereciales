@@ -57,7 +57,6 @@ def main():
         #TODO verificar valides de entrada
         evaluate( eq )
 
-
 if __name__ == '__main__':
     main()
 
