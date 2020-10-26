@@ -1,7 +1,9 @@
 #       TAREA 4
 #
 
+
 from sympy import *
+
 
 # < >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >
 def is_separable( eq ):
@@ -26,6 +28,7 @@ def is_separable( eq ):
 		return False
 	
 # < >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >
+
 
 def show_resources():
     #TODO
