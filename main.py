@@ -45,7 +45,6 @@ def evaluate( eq ):
         show_resources()
 
 
-
 def main():
     x,y = symbols('x y')
     eq = 1
