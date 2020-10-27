@@ -3,16 +3,22 @@
 ## Instrucciones de uso
 
 Sólo introducir ecuaciones con funciones polinomiales de x o y
-x^2 -> x\**2
 
-1. Llevar la ecuación a la forma **F(x,y)=y'**
+
+Llevar la ecuación a la forma **F(x,y)=y'**
 e introducir sólamente F, sin la igualdad
 
-vgr.
-a(x) = b(y) -> a(x)-b(y)
-a(x
+a(x) = b(y)+y' -> a(x)-b(y)
 
-la derivada escribirla como 
-### Ejemplo de formato
-x\**2+y
+a(x) = b(y)y'  -> a(x)/b(y)
+
+Expresar la miltiplicación con asterisco \*
+
+y potenciación con doble asterisco \**
+
+3x-> 3\*x
+
+3x^2-> 3\*x\**2
+
+3x
 
