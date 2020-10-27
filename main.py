@@ -6,6 +6,7 @@
 #               Oscar David Domínguez Dávila
 #
 #       instrucciones de uso en README.md
+# 	o en https://github.com/RuberDavid/Tarea-4-ecuaciones-difereciales/blob/main/README.md
 
 from sympy import *
 
