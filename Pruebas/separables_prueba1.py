@@ -2,18 +2,19 @@ from sympy import *
 
 x,y = symbols('x y')
 
-# De la forma y'=p(x)q(y), equation=p(x)q(y)
-equation= (x+y)*y
+# Si f(x,y) = p(x)q(y) entonces f(1,1) = p(1)q(1)
+# así f(1,y)f(x,1) = p(1)q(y)p(x)q(1)
+# por lo tanto f(1,y)f(x,1) = f(1,1)f(x,y)
 
-# equation.subs([(x,1),(y,y)]) podría escribirse sólo como equation.subs(x,1) pero lo expongo así por claridad.
-equation2 = equation.subs([(x,1),(y,y)]) * equation.subs([(x,x),(y,1)])
+eq = exp(x)*exp(y)
 
-k_m = equation.subs([(x,1),(y,1)])
+# f(1,y)f(x,1)
+eq_2 = eq.subs(x,1) * eq.subs(y,1)
 
-print (equation)
+print (eq)
 
-if simplify((k_m*equation)-equation2)==0 :
+# Si f(1,y)f(x,1) = f(1,1)f(x,y) entonces es separable.
+if simplify(eq_2 - (eq.subs([(x,1),(y,1)])*eq)) == 0:
 	print ('Es separable')
 else:
 	print ('No es separable')
-
