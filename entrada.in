@@ -1,17 +1,46 @@
-Separables
+[SEPARABLES]
     TRUE
-        exp(x)*exp(y)
-        (2*x-10)/(y-4)
-        3*y
+        y'=exp(x)*exp(y)
+        y'=(2*x-10)/(y-4)
+        y'=3*y
     FALSE
+        y'=(x+y)*y
+        y'=y/x-x**2
+        
+[LINEALES]
+    TRUE
+        y'= 1/(2*x**3 + 9*x**4 + 30*x) + ((6*x**2 + 36*x*3 + 30)/(2*x**3 + 9*x**4 + 30*x))*y
+        y'= x + x**2*y  
+    FALSE
+   
+[BERNOULLI]
+    TRUE
+        2*y**3 + y
+    FALSE
+        2*y + y
+    
+[EXACTA]
+    TRUE
         (x+y)*y
-        y/x-x**2
+        -(2*x+y+10)/x
+        -(2*x*E**y+E*x)/((x**2+1)*E**y)
+        (2*x/y**3) / ( (y**2 - 3*x**2 )/y**4)
+    FALSE
+    
+[COEF LINALES]
+    TRUE
+    FALSE
+    
+[HOMOGENEA]
+    TRUE
+    FALSE
+    
 
 y'= 2y^3 + y + 4
 y'=1,
 y'-y=3x-y'',
 3y'- 6x^3=0,
-(2x^3 + 9x^4 + 30x)y´+(6x^2 + 36x^3 + 30)y = 1
+
 y^2 +x^2y'=0
 (x**3+2*x*y)/(y*x)
 -(y/x)
