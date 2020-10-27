@@ -9,7 +9,7 @@ x,y = symbols('x y')
 
 eq = x*2 -x*y
 
-eq_2 = eq.subs(x,0)
+eq_2 = eq.subs(x,1)
 eq_3 = eq.subs(y,0)
 	
 if eq_2.has(y) and eq_3 != 0:
