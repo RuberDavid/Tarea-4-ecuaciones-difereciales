@@ -1,7 +1,11 @@
 
 
+
 #       TAREA 4
+#       por     Luis Ramos Guerrero
+#               Oscar David Domínguez Dávila
 #
+#       instrucciones de uso en README.md
 
 from sympy import *
 
@@ -77,7 +81,26 @@ def is_homogeneous( eq ):
 
 def show_resources():
     #TODO
-    doc = "oli :3"
+    doc = """No hemos podido identificar el tipo de ecuación
+    Quizás sea pueda llevarse a una ecuación diferencial exacta encontrando un
+    factor integrante adecuado.
+    Para más información se enlistarán algnos recursos en linea
+
+    Ecuaciones diferenciales exactas
+    https://es.wikipedia.org/wiki/Ecuaci%C3%B3n_diferencial_exacta
+
+    Cálculo diferencial e integral tomo ii -Piskunov:
+    http://libgen.rs/book/index.php?md5=816D73A44B45FFDF23E096F816391216
+    
+   	Differential equations, dynamical systems, and an introduction to chaos-Devaney et al.
+    http://libgen.rs/book/index.php?md5=5B055F12AACE552EB321216F14C028E1
+    
+    Una serie de videos ilustrativos:
+    https://www.youtube.com/playlist?list=PLZHQObOWTQDNPOjrT6KVlfJuKtYTftqH6
+
+    también se puede recurrir al comando dsolve de sympy:
+    https://docs.sympy.org/latest/tutorial/solvers.html#solving-differential-equations
+    """
     print(doc)
 
 # < >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >< >
@@ -86,18 +109,37 @@ def how_to_solve( type_of_eq ):
     '''
     type_of_eq is a string with one on these values : exact, separable, linear, bernoulli
     '''
-    #exact =
-    #separable =
-    #linear = 
+    exact = """Es una ecuación exacta o total
+    puede llevarse a la forma
+            M(x,y)+N(x,y)y'=0
+
+    donde las derivadas parciales
+    con respecto a y y x de M y N respectivamente son iguales.
+    Para resolver
+    Integra N o M respecto a x o y
+    se obtendrá una solución implicita
+            """
+            
+    separable ="""Es una ecuación de variables separables
+    y puede llevarse a la forma 
+            y'=g(x)p(y)
+   
+    Para resolverla:
+        multiplicar por 1/p(y)
+        integrar ambos lados respecto a la única variable representada
+        Se obtendrá una solución implicita
+            """
+    linear ="""Es una ecuación lineal
+    """
+
     #dictionary data structure for "manual"
-    #TODO te falta ponerlo de a devis crack B)
     man = {
-            "exact" : "Exact Man",
-            "separable" : "sep man",
-            "linear" : "lin",
-            "bernoulli" : "bern",
-            "homogeneous" : "homogen",
-            "linear_coeficients" : "lin coefs"
+            "exact" : exact,
+            "separable" : separable,
+            "linear" : linear,
+            "bernoulli" : "bernoulli",
+            "homogeneous" : "homogenea",
+            "linear_coeficients" : "coeficientes lineales"
             }
 
     print( man[ type_of_eq ] )
