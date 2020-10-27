@@ -10,9 +10,11 @@ x,y = symbols('x y')
 eq = x*2 -x*y
 
 eq_2 = eq.subs(x,0)
-eq_3 = eq.subs(x,1)
-
-if eq_2 == 0 and (eq_3.has(y) and not eq_3.has(x)) :
-    print ("Lineales")
+eq_3 = eq.subs(y,0)
+	
+if eq_2.has(y) and eq_3 != 0:
+    print ("Es Lineal")
 else:
-    print("No Lineales")
+    print("No es Lineal")
+
+    
