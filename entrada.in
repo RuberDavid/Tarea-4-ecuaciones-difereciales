@@ -1,7 +1,18 @@
+Separables
+    TRUE
+        exp(x)*exp(y)
+        (2*x-10)/(y-4)
+        3*y
+    FALSE
+        (x+y)*y
+        y/x-x**2
+
 y'= 2y^3 + y + 4
 y'=1,
 y'-y=3x-y'',
 3y'- 6x^3=0,
 (2x^3 + 9x^4 + 30x)y´+(6x^2 + 36x^3 + 30)y = 1
 y^2 +x^2y'=0
-
+(x**3+2*x*y)/(y*x)
+-(y/x)
+-(2*x*E**y+E*x)/((x**2+1)*E**y)
