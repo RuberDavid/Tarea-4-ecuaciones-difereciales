@@ -48,9 +48,9 @@ def is_linear( eq ):
     x,y = symbols('x y')
 
     eq_2 = eq.subs(x,0)
-    eq_3 = eq.subs(x,1)
-
-    if eq_2 == 0 and (eq_3.has(y) and not eq_3.has(x)) :
+	eq_3 = eq.subs(y,0)
+	
+    if (eq_2.has(y) and not eq_2.has(x)) and eq_3 != 0:
         return True
     else:
         return False
